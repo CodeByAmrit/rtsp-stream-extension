@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 320px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 8px;
+}

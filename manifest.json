@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "RTSP Stream Viewer",
+    "version": "1.0",
+    "description": "Enter RTSP link and view live stream",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
