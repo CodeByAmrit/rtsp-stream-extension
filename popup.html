@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>RTSP Stream Viewer</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="tailwind.js"></script>
   </head>
-  <body>
-    <h2>Enter RTSP URL</h2>
-    <input type="text" id="rtspInput" placeholder="rtsp://..." />
-    <button id="playBtn">Play Stream</button>
+  <body
+    class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white p-4 w-80 font-sans"
+  >
+    <h2 class="text-lg font-semibold mb-2">📡 RTSP Stream Viewer</h2>
 
-    <video id="videoPlayer" controls autoplay muted></video>
+    <input
+      type="text"
+      id="rtspInput"
+      placeholder="Enter RTSP URL (e.g., rtsp://...)"
+      class="w-full px-3 py-2 mb-3 text-sm border rounded-md"
+    />
 
-    <script src="hls.js"></script>
+    <div class="flex items-center justify-between">
+      <button
+        id="openBtn"
+        class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md"
+      >
+        Open Stream
+      </button>
+    </div>
+
     <script src="popup.js"></script>
   </body>
 </html>

@@ -1,14 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "RTSP Stream Viewer",
+    "name": "RTSP Stream Redirector",
     "version": "1.0",
-    "description": "Enter RTSP link and view live stream",
+    "description": "Redirects RTSP link to cctvcameralive.in for live streaming.",
     "action": {
-        "default_popup": "popup.html",
-        "default_icon": "icon.png"
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
     },
-    "permissions": [],
-    "host_permissions": [
-        "<all_urls>"
-    ]
-}
+    "permissions": ["tabs"]
+  }
+  
